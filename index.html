@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redemption Services</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-gray-900 h-screen">
+    <header class="w-full h-auto py-5 flex items-center justify-between px-4 mb-5">
+        <!-- Website name aligned to the left -->
+        <h2 class="text-white text-2xl font-bold">Redemption</h2>
+
+        <!-- Navigation aligned to the right -->
+        <nav class="hidden md:flex gap-6">
+            <a href="./index.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Home</a>
+            <a href="./about.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">About</a>
+            <a href="./services.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Services</a>
+            <a href="./contact.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Contact</a>
+        </nav>
+        <button class="block md:hidden text-white text-2xl cursor-pointer" id="toggle-button">&#9776;</button>
+    </header>
+    <!-- mobile menu -->
+    <nav class="hidden flex-col bg-gray-800 w-full h-auto mb-5 py-2 mobileMenu">
+        <a href="./index.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Home</a>
+        <a href="./about.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">About</a>
+        <a href="./services.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Services</a>
+        <a href="./contact.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Contact</a>
+    </nav>
+    <!-- title Area -->
+    <div class="w-full h-auto p-10 relative">
+        <div class="relative h-auto w-full">
+
+            <h1 class="text-white text-[5rem] font-extrabold font ">Empovering Code,</h1>
+            <h1 class="text-white text-[5rem] font-extrabold font ">Securing Cyber Space</h1>
+            <h1 class="absolute top-[45%] left-[40%] text-[3rem] font-bold text-blue-500 font">
+                Redemption
+            </h1>
+        </div>
+        <div class="w-full h-auto flex justify-between items-center">
+            <p class="text-gray-500 text-xl mt-10">Hello! We're the Redemption Services team. We hope you like what we
+                offer
+                and look forward to working with you.</p>
+            <button class="bg-transparent text-white px-5 py-3 border-b-2 border-white">
+                Continue &rightarrow;
+            </button>
+
+        </div>
+    </div>
+    <!-- image section  -->
+    <section class="w-full flex items-center justify-center h-auto">
+
+        <section class="w-3/4 h-auto relative mt-[100px]">
+            <img src="./assets/shawshank Redemption.jpeg" alt=""
+                class="w-full h-[900px] object-cover object-[30%_45%] rounded-[36px] ">
+        </section>
+    </section>
+
+    <!-- services -->
+    <section class="w-full flex flex-col px-5 md:px-10 gap-5 mt-[100px]">
+        <h1 class="text-white font-bold text-2xl md:text-[2rem] font">Services:</h1>
+
+        <div class="w-full flex flex-wrap justify-center gap-5">
+            <!-- Card 1 -->
+            <div class="card bg-gray-800 flex flex-col gap-4 rounded-xl min-h-[450px] flex-shrink-0 
+                w-full max-w-xs sm:max-w-sm md:w-[300px] lg:max-w-sm">
+                <img src="assets/services/web.png" alt="" class="w-full h-3/5 object-cover rounded-t-xl">
+                <div class="w-full h-2/5 px-4">
+                    <h1 class="text-white text-lg md:text-xl">Web Development</h1>
+                    <p class="text-gray-500 text-justify text-sm md:text-base">
+                        Custom web applications, landing pages, and full-stack solutions tailored for businesses and
+                        startups.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card bg-gray-800 flex flex-col gap-4 rounded-xl min-h-[450px] flex-shrink-0 
+                w-full max-w-xs sm:max-w-sm md:w-[300px] lg:max-w-sm">
+                <img src="assets/services/penetration.png" alt="" class="w-full h-3/5 object-cover rounded-t-xl">
+                <div class="w-full h-2/5 px-4">
+                    <h1 class="text-white text-lg md:text-xl">Penetration Testing</h1>
+                    <p class="text-gray-500 text-justify text-sm md:text-base">
+                        Identify vulnerabilities in your web apps, networks, and systems with ethical hacking
+                        techniques.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card bg-gray-800 flex flex-col gap-4 rounded-xl min-h-[450px] flex-shrink-0 
+                w-full max-w-xs sm:max-w-sm md:w-[300px] lg:max-w-sm">
+                <img src="assets/services/E-Commerce.png" alt="" class="w-full h-3/5 object-cover rounded-t-xl">
+                <div class="w-full h-2/5 px-4">
+                    <h1 class="text-white text-lg md:text-xl">E-Commerce Solutions</h1>
+                    <p class="text-gray-500 text-justify text-sm md:text-base">
+                        Design, development, and security optimization for online stores and payment integrations.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card bg-gray-800 flex flex-col gap-4 rounded-xl min-h-[450px] flex-shrink-0 
+                w-full max-w-xs sm:max-w-sm md:w-[300px] lg:max-w-sm">
+                <img src="assets/services/Network Security.png" alt="" class="w-full h-3/5 object-cover rounded-t-xl">
+                <div class="w-full h-2/5 px-4">
+                    <h1 class="text-white text-lg md:text-xl">Network Security</h1>
+                    <p class="text-gray-500 text-justify text-sm md:text-base">
+                        Secure your network infrastructure with firewalls, intrusion detection systems, and DDoS
+                        protection.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto flex justify-end">
+            <a href="./services.html">
+                <button class="bg-transparent text-white px-5 py-3 border-b-2 border-white">
+                    See more &rightarrow;
+                </button>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- cooperation -->
+    <section class="w-full h-auto flex items-center justify-center flex-col mt-[100px]">
+        <h1 class="font text-white text-4xl sm:text-5xl md:text-6xl font-extrabold">
+            LET'S BEGIN
+        </h1>
+        <h1 class="font text-blue-500 text-5xl sm:text-6xl md:text-7xl font-extrabold">
+            COOPERATION
+        </h1>
+        <div class="w-full h-auto flex justify-center mt-6">
+            <a href="./services.html">
+                <button class="bg-transparent text-white px-5 py-3 border-b-2 border-white text-lg sm:text-xl">
+                    Let's Go &rightarrow;
+                </button>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="w-full h-[200px] flex items-end justify-center py-2">
+        <p class="text-gray-700">
+            &copy; <span id="year"></span> Sadraw-n. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+
+</body>
+
+</html>

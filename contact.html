@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindFuck</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body class="bg-gray-900">
+    <header class="w-full h-auto py-5 flex items-center justify-between px-4 mb-5">
+        <!-- Website name aligned to the left -->
+        <h2 class="text-white text-2xl font-bold">Redemption</h2>
+
+        <!-- Navigation aligned to the right -->
+        <nav class="hidden md:flex gap-6">
+            <a href="./index.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Home</a>
+            <a href="./about.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">About</a>
+            <a href="./services.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Services</a>
+            <a href="./contact.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Contact</a>
+        </nav>
+        <button class="block md:hidden text-white text-2xl cursor-pointer" id="toggle-button">&#9776;</button>
+    </header>
+    <!-- mobile menu -->
+    <nav class="hidden flex-col bg-gray-800 w-full h-auto mb-5 py-2 mobileMenu">
+        <a href="./index.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Home</a>
+        <a href="./about.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">About</a>
+        <a href="./services.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Services</a>
+        <a href="./contact.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Contact</a>
+    </nav>
+
+    <main class="h-auto w-full flex flex-col items-center text-white px-5">
+        <div class="flex flex-col items-center h-auto justify-center">
+            <h1 class="text-2xl font-bold mb-5">Contact us</h1>
+            <p class="text-gray-500 font-xl">You can get in touch with us via Email address and phone numbers</p>
+        </div>
+        <!-- upper container  -->
+        <div class="w-full px-5 h-auto py-3 flex flex-col md:flex-row gap-2 items-center justify-center mt-10">
+            <form action="contact.html" class="w-[90%] sm:w-[45%] h-auto gap-3 items-start justify-center mx-auto"
+                id="emailForm">
+                <h1 class="text-xl font-bold mb-5">Get in touch</h1>
+                <div class="flex flex-wrap gap-2">
+                    <input type="text" name="subject" id="subject" placeholder="Subject"
+                        class="bg-transparent w-full md:w-[45%] transision duration-[0.25s] rounded-t-lg text-white border-b border-b-gray-300 text-black p-2 focus:outline-none focus:border focus:border-gray-300"
+                        autocomplete="off">
+                    <input type="text" name="name" id="name" placeholder="Name"
+                        class="bg-transparent transision w-full md:w-1/2 duration-[0.25s] rounded-t-lg text-white border-b border-b-gray-300 text-black p-2 focus:outline-none focus:border focus:border-gray-300"
+                        autocomplete="off">
+                    <input type="text" name="email" id="email" placeholder="Email"
+                        class="bg-transparent transision w-full md:w-1/2 duration-[0.25s] rounded-t-lg text-white border-b border-b-gray-300 text-black p-2 focus:outline-none focus:border focus:border-gray-300"
+                        autocomplete="off">
+                    <textarea name="message" id="message" placeholder="Message"
+                        class="bg-transparent transision duration-[0.25s] w-full min-h-[200px] resize-none rounded-t-lg text-white border-b border-b-gray-300 text-black p-2 focus:outline-none focus:border focus:border-gray-300"></textarea>
+                </div>
+                <div class="flex items-center justify-end p-3"><button type="submit"
+                        class="bg-cool-blue rounded-lg px-4 py-2">&#8594; Submit</button></div>
+            </form>
+            <div class="h-full w-[10%] flex items-center justify-center">
+                <div class="w-px h-full bg-gray-400"></div>
+            </div>
+            <div class="w-[45%] h-full flex flex-col gap-2">
+                <div class="flex flex-col space-y-4 ">
+
+                    <h1>Call us</h1>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempora eius
+                        recusandae dolorem doloremque nisi fugit fuga reprehenderit molestiae</p>
+                    <div class="flex gap-3 items-center text-blue-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M6.62 10.79a15.91 15.91 0 006.59 6.59l2.2-2.2a1 1 0 011-.26 10.26 10.26 0 003.18.51 1 1 0 011 1V20a1 1 0 01-1 1 19 19 0 01-19-19 1 1 0 011-1h3.24a1 1 0 011 1 10.26 10.26 0 00.51 3.18 1 1 0 01-.26 1z" />
+                        </svg>
+                        <p>
+                            +98 912 123 4567
+                        </p>
+                    </div>
+                </div>
+                <h1>Visit us </h1>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempora eius
+                    recusandae dolorem doloremque nisi fugit fuga reprehenderit molestiae</p>
+                <div class="flex gap-3 items-center text-blue-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 8.5c0 2.68 3 7.76 7 12.58 4-4.82 7-9.9 7-12.58C19 5.13 15.87 2 12 2zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" />
+                    </svg>
+                    <p>
+                        Tabriz - El-Goli
+                    </p>
+                </div>
+                <h1>Text us</h1>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempora eius
+                    recusandae dolorem doloremque nisi fugit fuga reprehenderit molestiae</p>
+                <div class="flex gap-3 items-center text-blue-500">
+                    <p class="text-blue-500 font-bold text-xl">@</p>
+                    <p>
+                        Redemption.services@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- map -->
+
+
+        <div id="map" class="w-[400px] h-[200px] my-10 md:w-[700px] md:h-[400px] rounded-x;"></div>
+        <div class="flex items-center justify-center gap-2">
+            <h2>Cordintaion : </h2>
+            <a id="copyText" class="text-gray-500 cursor-pointer">38.02553896125303, 46.365667871288984</a>
+        </div>
+
+        <section class="w-full py-5 mt-[100px] text-white px-3">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="flex justify-center items-center mb-5">
+                    <p class="text-lg font-semibold">Frequently</p>
+                    <p class="text-lg font-semibold mx-2">Asked</p>
+                    <p class="text-lg font-semibold">Questions</p>
+                </div>
+
+                <div class="space-y-3">
+                    <!-- Question 1 -->
+                    <div class="p-3 bg-gray-700 rounded-lg shadow-lg">
+                        <button class="w-full text-left text-sm font-semibold focus:outline-none" id="question1">
+                            What is the purpose of this website?
+                        </button>
+                        <p class="mt-1 text-gray-400 hidden text-xs" id="answer1">
+                            This website provides cybersecurity and web development services.
+                        </p>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="p-3 bg-gray-700 rounded-lg shadow-lg">
+                        <button class="w-full text-left text-sm font-semibold focus:outline-none" id="question2">
+                            How do I contact support?
+                        </button>
+                        <p class="mt-1 text-gray-400 hidden text-xs" id="answer2">
+                            Contact us via the form or email provided on the Contact page.
+                        </p>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="p-3 bg-gray-700 rounded-lg shadow-lg">
+                        <button class="w-full text-left text-sm font-semibold focus:outline-none" id="question3">
+                            What services do you offer?
+                        </button>
+                        <p class="mt-1 text-gray-400 hidden text-xs" id="answer3">
+                            We specialize in web development, cybersecurity, and consulting.
+                        </p>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="p-3 bg-gray-700 rounded-lg shadow-lg">
+                        <button class="w-full text-left text-sm font-semibold focus:outline-none" id="question4">
+                            Do you provide customer support after project completion?
+                        </button>
+                        <p class="mt-1 text-gray-400 hidden text-xs" id="answer4">
+                            Yes, we offer post-project support to ensure satisfaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="w-full h-[200px] flex items-end justify-center py-2">
+        <p class="text-gray-700">
+            &copy; <span id="year"></span> Sadraw-n. All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- email api -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!--  Menu.js -->
+    <script src="./js/menu.js"></script>
+    <!-- map.js -->
+    <script src="./js/map.js"></script>
+    <!-- email.js -->
+    <script src="./js/email.js"></script>
+    <script src="js/contact.js"></script>
+
+
+
+
+</body>
+
+</html>

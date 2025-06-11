@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindFuck</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="bg-gray-900 h-screen">
+    <header class="w-full h-auto py-5 flex items-center justify-between px-4 mb-5">
+        <!-- Website name aligned to the left -->
+        <h2 class="text-white text-2xl font-bold">Redemption</h2>
+
+        <!-- Navigation aligned to the right -->
+        <nav class="hidden md:flex gap-6">
+            <a href="./index.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Home</a>
+            <a href="./about.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">About</a>
+            <a href="./services.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Services</a>
+            <a href="./contact.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Contact</a>
+        </nav>
+        <button class="block md:hidden text-white text-2xl cursor-pointer" id="toggle-button">&#9776;</button>
+    </header>
+    <!-- mobile menu -->
+    <nav class="hidden flex-col bg-gray-800 w-full h-auto mb-5 py-2 mobileMenu">
+        <a href="./index.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Home</a>
+        <a href="./about.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">About</a>
+        <a href="./services.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Services</a>
+        <a href="./contact.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Contact</a>
+    </nav>
+    <main class="flex flex-col items-center gap-3 space-y-3 h-auto">
+        <section class="w-full  px-4 py-4 flex flex-col items-center justify-center space-y-4">
+            <h1 class="text-white text-5xl text-center">Our Services</h1>
+            <p class="text-gray-500 text-xl max-w-[650px] text-center">We provide expert computer programming, web
+                development, and cybersecurity solutions to secure, build, and optimize your digital presence.</p>
+
+            <!-- Cards container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3">
+                <!-- Web Development -->
+                <div
+                    class="card bg-gray-800 h-auto min-h-[450px] w-full sm:w-[350px] md:w-[300px] lg:w-[350px] flex flex-col gap-4 rounded-xl">
+                    <img src="assets/services/web.png" alt="" class="w-full h-3/5 object-cover rounded-t-xl">
+                    <!-- Text Div -->
+                    <div class="w-full h-2/5 px-4">
+                        <h1 class="text-white text-lg md:text-xl">Web Development</h1>
+                        <p class="text-gray-500 text-justify text-sm md:text-base">
+                            Custom web applications, landing pages, and full-stack solutions tailored for businesses and
+                            startups.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity & Penetration Testing -->
+                <div
+                    class="card bg-gray-800 h-auto min-h-[450px] w-full sm:w-[350px] md:w-[300px] lg:w-[350px] flex flex-col gap-4 rounded-xl">
+                    <img src="assets/services/penetration.png" alt="" class="w-full h-3/5 object-cover rounded-t-xl">
+                    <!-- Text Div -->
+                    <div class="w-full h-2/5 px-4">
+                        <h1 class="text-white text-lg md:text-xl">Penetration Testing</h1>
+                        <p class="text-gray-500 text-justify text-sm md:text-base">
+                            Identify vulnerabilities in your web apps, networks, and systems with ethical hacking
+                            techniques.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- E-Commerce Solutions -->
+                <div
+                    class="card bg-gray-800 h-auto min-h-[450px] w-full sm:w-[350px] md:w-[300px] lg:w-[350px] flex flex-col gap-4 rounded-xl">
+                    <img src="assets/services/E-Commerce.png" alt="" class="w-full h-3/5 object-cover rounded-t-xl">
+                    <!-- Text Div -->
+                    <div class="w-full h-2/5 px-4">
+                        <h1 class="text-white text-lg md:text-xl">E-Commerce Solutions</h1>
+                        <p class="text-gray-500 text-justify text-sm md:text-base">
+                            Design, development, and security optimization for online stores and payment integrations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Network Security -->
+                <div
+                    class="card bg-gray-800 h-auto min-h-[450px] w-full sm:w-[350px] md:w-[300px] lg:w-[350px] flex flex-col gap-4 rounded-xl">
+                    <img src="assets/services/Network Security.png" alt=""
+                        class="w-full h-3/5 object-cover rounded-t-xl">
+                    <!-- Text Div -->
+                    <div class="w-full h-2/5 px-4">
+                        <h1 class="text-white text-lg md:text-xl">Network Security</h1>
+                        <p class="text-gray-500 text-justify text-sm md:text-base">
+                            Secure your network infrastructure with firewalls, intrusion detection systems, and DDoS
+                            protection.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- API Development -->
+                <div
+                    class="card bg-gray-800 h-auto min-h-[450px] w-full sm:w-[350px] md:w-[300px] lg:w-[350px] flex flex-col gap-4 rounded-xl">
+                    <img src="assets/services/api development.png" alt=""
+                        class="w-full h-3/5 object-cover rounded-t-xl">
+                    <!-- Text Div -->
+                    <div class="w-full h-2/5 px-4">
+                        <h1 class="text-white text-lg md:text-xl">API Development</h1>
+                        <p class="text-gray-500 text-justify text-sm md:text-base">
+                            Build secure and scalable APIs for seamless integration between your applications and
+                            third-party services.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cloud Security -->
+                <div
+                    class="card bg-gray-800 h-auto min-h-[450px] w-full sm:w-[350px] md:w-[300px] lg:w-[350px] flex flex-col gap-4 rounded-xl">
+                    <img src="assets/services/Cloud Security.png" alt="" class="w-full h-3/5 object-cover rounded-t-xl">
+                    <!-- Text Div -->
+                    <div class="w-full h-2/5 px-4">
+                        <h1 class="text-white text-lg md:text-xl">Cloud Security</h1>
+                        <p class="text-gray-500 text-justify text-sm md:text-base">
+                            Secure cloud environments with encryption, access control, and compliance with best
+                            practices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Malware Analysis -->
+                <div
+                    class="card bg-gray-800 h-auto min-h-[450px] w-full sm:w-[350px] md:w-[300px] lg:w-[350px] flex flex-col gap-4 rounded-xl">
+                    <img src="assets/services/Malware Analysis.png" alt=""
+                        class="w-full h-3/5 object-cover rounded-t-xl">
+                    <!-- Text Div -->
+                    <div class="w-full h-2/5 px-4">
+                        <h1 class="text-white text-lg md:text-xl">Malware Analysis</h1>
+                        <p class="text-gray-500 text-justify text-sm md:text-base">
+                            Detect, analyze, and remove malware to protect your systems from cyber threats and data
+                            breaches.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- DevOps & CI/CD -->
+                <div
+                    class="card bg-gray-800 h-auto min-h-[450px] w-full sm:w-[350px] md:w-[300px] lg:w-[350px] flex flex-col gap-4 rounded-xl">
+                    <img src="assets/services/devops.png" alt="" class="w-full h-3/5 object-cover rounded-t-xl">
+                    <!-- Text Div -->
+                    <div class="w-full h-2/5 px-4">
+                        <h1 class="text-white text-lg md:text-xl">DevOps & CI/CD</h1>
+                        <p class="text-gray-500 text-justify text-sm md:text-base">
+                            Automate deployments and improve development workflows with continuous integration and
+                            delivery.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Digital Forensics -->
+                <div
+                    class="card bg-gray-800 h-auto min-h-[450px] w-full sm:w-[350px] md:w-[300px] lg:w-[350px] flex flex-col gap-4 rounded-xl">
+                    <img src="assets/services/Digital Forensics.png" alt=""
+                        class="w-full h-3/5 object-cover rounded-t-xl">
+                    <!-- Text Div -->
+                    <div class="w-full h-2/5 px-4">
+                        <h1 class="text-white text-lg md:text-xl">Digital Forensics</h1>
+                        <p class="text-gray-500 text-justify text-sm md:text-base">
+                            Investigate security incidents and analyze digital evidence to track cyber threats.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Secure Code Review -->
+                <div
+                    class="card bg-gray-800 h-auto min-h-[450px] w-full sm:w-[350px] md:w-[300px] lg:w-[350px] flex flex-col gap-4 rounded-xl">
+                    <img src="assets/services/Secure Code Review .png" alt=""
+                        class="w-full h-3/5 object-cover rounded-t-xl">
+                    <!-- Text Div -->
+                    <div class="w-full h-2/5 px-4">
+                        <h1 class="text-white text-lg md:text-xl">Secure Code Review</h1>
+                        <p class="text-gray-500 text-justify text-sm md:text-base">
+                            Audit source code to identify security flaws and ensure best coding practices for secure
+                            applications.
+                        </p>
+                    </div>
+        </section>
+
+        <section class="w-full h-auto flex flex-col gap-3 mt-[100px] items-center space-y-5 mb-[100px]">
+            <h1 class="text-white text-5xl">Our Process</h1>
+            <div class="w-full h-auto flex flex-col md:flex-row gap-3 items-center justify-center">
+                <!-- card -->
+                <div
+                    class="w-[400px] h-[300px] flex items-center p-4 flex-col bg-gray-800 rounded-lg py-10 justify-center space-y-10">
+                    <h1 class="text-white text-2xl">
+                        1 . Appointment
+                    </h1>
+                    <p class="text-gray-500 text-xl">Clients are heard and empowered.</p>
+                </div>
+                <!-- card -->
+                <div
+                    class="w-[400px] h-[300px] flex items-center p-4 flex-col bg-gray-800 rounded-lg py-10 justify-center space-y-10">
+                    <h1 class="text-white text-2xl">
+                        2 . Advice And Guide You
+                    </h1>
+                    <p class="text-gray-500 text-xl">Clients feel supported.</p>
+                </div>
+                <!-- card -->
+                <div
+                    class="w-[400px] h-[300px] flex items-center p-4 flex-col bg-gray-800 rounded-lg py-10 justify-center space-y-10">
+                    <h1 class="text-white text-2xl">
+                        3 . Resolve
+                    </h1>
+                    <p class="text-gray-500 text-xl">Our Practice is solution focused.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <section class="w-full h-auto flex flex-col items-center justify-center mt-[100px] space-y-5">
+        <h1 class="text-white text-2xl">How To Get Service?</h1>
+        <p class="text-gray-500 text-xl">
+            For Getting any Service contact us with our Email address's
+        </p>
+        <p class="text-blue-500 text-xl">Email : Redemption.services@gmail.com</p>
+        <a href="contact.html" class="bg-white text-black text-xl rounded-full px-4 py-2">Contact Us</a>
+    </section>
+
+
+
+    <footer class="w-full h-[200px] flex items-end justify-center py-2">
+        <p class="text-gray-700">
+            &copy; <span id="year"></span> Sadraw-n. All Rights Reserved.
+        </p>
+    </footer>
+    <!-- scripts -->
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindFuck</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="bg-gray-900 h-screen">
+    <header class="w-full h-auto py-5 flex items-center justify-between px-4 mb-5">
+        <!-- Website name aligned to the left -->
+        <h2 class="text-white text-2xl font-bold">Redemption</h2>
+
+        <!-- Navigation aligned to the right -->
+        <nav class="hidden md:flex gap-6">
+            <a href="./index.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Home</a>
+            <a href="./about.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">About</a>
+            <a href="./services.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Services</a>
+            <a href="./contact.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Contact</a>
+        </nav>
+        <button class="block md:hidden text-white text-2xl cursor-pointer" id="toggle-button">&#9776;</button>
+    </header>
+
+    <!-- mobile menu -->
+    <nav class="hidden flex-col bg-gray-800 w-full h-auto mb-5 py-2 mobileMenu">
+        <a href="./index.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Home</a>
+        <a href="./about.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">About</a>
+        <a href="./services.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Services</a>
+        <a href="./contact.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Contact</a>
+    </nav>
+
+    <main class="flex flex-col gap-3 px-10 text-white items-center">
+        <!-- heading -->
+        <section class="w-full h-auto flex flex-col mb-10 items-center justify-start">
+            <h1 class="font-bold text-[4rem] md:text-[5rem]">About us</h1>
+            <p class="text-gray-500">This is Redemption team.</p>
+        </section>
+
+        <!-- image and describtion -->
+        <section class="flex flex-col md:flex-row gap-10 items-center w-1/2 h-auto">
+            <!-- left side -->
+            <div class="w-full md:w-1/2 h-full flex items-center justify-center" id="leftSide">
+                <img src="assets/shawshank Redemption.jpeg"
+                    class="w-full h-full  max-h-[500px] object-cover object-center rounded-xl pointer-events-none"
+                    alt="team image">
+            </div>
+            <!-- text part -->
+            <div class="w-full md:w-1/2 h-full text-center md:text-left flex flex-col gap-3 items-center md:items-start justify-center space-y-3"
+                id="leftSide">
+                <h2 class="md:text-2xl font-bold text-transparent text-stroke-sm text-left">About us</h2>
+                <h1 class="text-white text-lg  md:text-5xl font-bold">We always make the best</h1>
+                <p class="text-white text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae unde odio
+                    voluptate eum hic maiores libero itaque repellendus sunt quibusdam, consectetur commodi dignissimos
+                    soluta dolorum ad repellat aspernatur maxime ipsum.</p>
+                <a href="./contact.html" class="text-black bg-white py-3 px-5 rounded-full mt-10">Contact us</a>
+            </div>
+        </section>
+
+        <!-- skills  -->
+        <section id="skills" class="w-3/4 h-auto flex flex-col md:flex-row gap-3p p-3 mt-10">
+
+            <div class="w-full h-auto flex flex-col gap-3 space-y-5">
+                <h1 class="text-2xl md:text-5xl text-white font-bold">
+                    Our Skills
+                </h1>
+                <!-- grid container -->
+                <div class="grid grid-cols-1 md:grid-cols-2 w-full gap-5">
+                    <!-- skill -->
+                    <div class="flex flex-col justify-center gap-5">
+                        <div class="flex justify-between">
+                            <p class="text-gray-500 text-xl">Programming</p>
+                            <p id="value" class="text-gray-500 text-xl">80%</p>
+                        </div>
+                        <!-- progress bar -->
+                        <div class="w-full h-2 bg-gray-700">
+                            <div class="bg-blue-500 w-[80%] h-1.5"></div>
+                        </div>
+                    </div>
+                    <!-- skill 2 -->
+                    <div class="flex flex-col justify-center gap-5">
+                        <div class="flex justify-between">
+                            <p class="text-gray-500 text-xl">Web Development</p>
+                            <p id="value" class="text-gray-500 text-xl">95%</p>
+                        </div>
+                        <!-- progress bar -->
+                        <div class="w-full h-2 bg-gray-700">
+                            <div class="bg-blue-500 w-[95%] h-1.5"></div>
+                        </div>
+                    </div>
+                    <!-- skill 2 -->
+                    <div class="flex flex-col justify-center gap-5">
+                        <div class="flex justify-between">
+                            <p class="text-gray-500 text-xl">Cross-platform development</p>
+                            <p id="value" class="text-gray-500 text-xl">95%</p>
+                        </div>
+                        <!-- progress bar -->
+                        <div class="w-full h-2 bg-gray-700">
+                            <div class="bg-blue-500 w-[95%] h-1.5"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center gap-5">
+                        <div class="flex justify-between">
+                            <p class="text-gray-500 text-xl">Automation and scripting</p>
+                            <p id="value" class="text-gray-500 text-xl">75%</p>
+                        </div>
+                        <!-- progress bar -->
+                        <div class="w-full h-2 bg-gray-700">
+                            <div class="bg-blue-500 w-[75%] h-1.5"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center gap-5">
+                        <div class="flex justify-between">
+                            <p class="text-gray-500 text-xl">Object-Oriented Programming (OOP)</p>
+                            <p id="value" class="text-gray-500 text-xl">60%</p>
+                        </div>
+                        <!-- progress bar -->
+                        <div class="w-full h-2 bg-gray-700">
+                            <div class="bg-blue-500 w-[60%] h-1.5"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center gap-5">
+                        <div class="flex justify-between">
+                            <p class="text-gray-500 text-xl">Threat detection and monitoring</p>
+                            <p id="value" class="text-gray-500 text-xl">95%</p>
+                        </div>
+                        <!-- progress bar -->
+                        <div class="w-full h-2 bg-gray-700">
+                            <div class="bg-blue-500 w-[95%] h-1.5"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center gap-5">
+                        <div class="flex justify-between">
+                            <p class="text-gray-500 text-xl">Data breach investigation</p>
+                            <p id="value" class="text-gray-500 text-xl">80%</p>
+                        </div>
+                        <!-- progress bar -->
+                        <div class="w-full h-2 bg-gray-700">
+                            <div class="bg-blue-500 w-[80%] h-1.5"></div>
+                        </div>
+                    </div>
+                    <!-- skill 3 -->
+                    <div class="flex flex-col justify-center gap-5">
+                        <div class="flex justify-between">
+                            <p class="text-gray-500 text-xl">Cyber Security</p>
+                            <p id="value" class="text-gray-500 text-xl">75%</p>
+                        </div>
+                        <!-- progress bar -->
+                        <div class="w-full h-2 bg-gray-700">
+                            <div class="bg-blue-500 w-[75%] h-1.5"></div>
+                        </div>
+                    </div>
+                    <!-- skill 4 -->
+                    <div class="flex flex-col justify-center gap-5">
+                        <div class="flex justify-between">
+                            <p class="text-gray-500 text-xl">Vulnerability assessment
+                            </p>
+                            <p id="value" class="text-gray-500 text-xl">60%</p>
+                        </div>
+                        <!-- progress bar -->
+                        <div class="w-full h-2 bg-gray-700">
+                            <div class="bg-blue-500 w-[75%] h-1.5"></div>
+                        </div>
+                    </div>
+                    <!-- skill 5 -->
+                    <div class="flex flex-col justify-center gap-5">
+                        <div class="flex justify-between">
+                            <p class="text-gray-500 text-xl">Penetration testing (ethical hacking)
+                            </p>
+                            <p id="value" class="text-gray-500 text-xl">85%</p>
+                        </div>
+                        <!-- progress bar -->
+                        <div class="w-full h-2 bg-gray-700">
+                            <div class="bg-blue-500 w-[85%] h-1.5"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center gap-5">
+                        <div class="flex justify-between">
+                            <p class="text-gray-500 text-xl">Intrusion Detection Systems (IDS)
+                            </p>
+                            <p id="value" class="text-gray-500 text-xl">70%</p>
+                        </div>
+                        <!-- progress bar -->
+                        <div class="w-full h-2 bg-gray-700">
+                            <div class="bg-blue-500 w-[70%] h-1.5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- data -->
+        <section
+            class="w-full h-auto flex flex-col md:flex-row gap-3 items-center justify-center mt-[100px] pointer-events-none">
+            <div id="card"
+                class="w-[250px] h-[250px] bg-gray-800 rounded-2xl flex items-center justify-center flex-col gap-3 pointer-events-none">
+                <h1 class="text-white font-bold text-5xl">3+</h1>
+                <p class="text-gray-500 text-xl">Years Of Experience</p>
+            </div>
+            <div id="card"
+                class="w-[250px] h-[250px] bg-gray-800 rounded-2xl flex items-center justify-center flex-col gap-3 pointer-events-none">
+                <h1 class="text-white font-bold text-5xl">10+</h1>
+                <p class="text-gray-500 text-xl">Projects Done</p>
+            </div>
+            <div id="card"
+                class="w-[250px] h-[250px] bg-gray-800 rounded-2xl flex items-center justify-center flex-col gap-3 pointer-events-none">
+                <h1 class="text-white font-bold text-5xl">10+</h1>
+                <p class="text-gray-500 text-xl">Satisfied Clients</p>
+            </div>
+            <div id="card"
+                class="w-[250px] h-[250px] bg-gray-800 rounded-2xl flex items-center justify-center flex-col gap-3 pointer-events-none">
+                <h1 class="text-white font-bold text-5xl">5+</h1>
+                <p class="text-gray-500 text-xl">Certified Awards</p>
+            </div>
+        </section>
+        <section class="w-full md:w-3/4 h-auto min-h-[500px] mt-10 rounded-lg flex items-center py-20 flex-col" style="background: url(./assets/34293835_blue_technical_background_1.svg) no-repeat center center; 
+               background-size: cover;">
+            <div class="w-1/2 h-auto flex flex-col items-center justify-center text-center space-y-5 gap-10">
+                <h1 class="text-white text-4xl font-bold">Hire Us</h1>
+                <h1 class="text-white text-5xl max-w-1/2">We’re always ready to Give the Best service </h1>
+                <a href="./contact.html" class="text-black bg-white py-3 px-5 rounded-full mt-10">Contact us</a>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- ! footer -->
+    <footer class="w-full h-[200px] flex items-end justify-center py-2">
+        <p class="text-gray-700">
+            &copy; <span id="year"></span> Sadraw-n. All Rights Reserved.
+        </p>
+    </footer>
+    <!-- scripts -->
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
+
+this is the shit that im trying

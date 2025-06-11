@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>MindFuck</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-gray-900 h-screen">
+    <header class="w-full h-auto py-5 flex items-center justify-between px-4 mb-5">
+        <!-- Website name aligned to the left -->
+        <h2 class="text-white text-2xl font-bold">Redemption</h2>
+
+        <!-- Navigation aligned to the right -->
+        <nav class="hidden md:flex gap-6">
+            <a href="./index.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Home</a>
+            <a href="./about.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">About</a>
+            <a href="./services.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Services</a>
+            <a href="./contact.html"
+                class="text-white font-sans py-2 px-4 rounded-full transition duration-500 hover:bg-white hover:text-[#000]">Contact</a>
+        </nav>
+        <button class="block md:hidden text-white text-2xl cursor-pointer" id="toggle-button">&#9776;</button>
+    </header>
+    <!-- mobile menu -->
+    <nav class="hidden flex-col bg-gray-800 w-full h-auto mb-5 py-2 mobileMenu">
+        <a href="./index.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Home</a>
+        <a href="./about.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">About</a>
+        <a href="./services.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Services</a>
+        <a href="./contact.html"
+            class="text-white font-sans py-4 px-4 transition duration-500 hover:bg-white hover:text-[#000]">Contact</a>
+    </nav>
+
+    <section class="relative">
+        <section class="w-full h-auto bg-gray-900 flex justify-center items-center"
+            >
+            <div class="text-center text-white space-y-4 relative z-10">
+                <p class="text-4xl md:text-6xl font-bold transform translate-x-[-30%]">Empowering</p>
+                <p class="text-2xl md:text-4xl font-bold transform translate-x-[30%]">Code,</p>
+                <p class="text-5xl md:text-7xl font-bold transform translate-x-[40%]">Securing</p>
+                <p class="text-3xl md:text-5xl font-bold transform translate-x-[-20%]">Cyberspace</p>
+            </div>
+        </section>
+
+        <!-- Rounded Background Div -->
+        <div class="w-[300px] h-[200px] md:w-[500px] md:h-[310px] bg-cool-blue rounded-[46%_54%_70%_30%_/54%_54%_46%_46%] 
+            hover:rounded-[54%_46%_30%_70%_/46%_46%_54%_54%] 
+            transition-all duration-700 ease-in-out 
+            filter backdrop-blur-sm absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0">
+        </div>
+    </section>
+    <div class="w-full h-auto flex flex-col items-center justify-center">
+        <section class="w-3/4 flex items-center justify-center flex-col h-auto px-6 py-10 my-[100px]">
+            <!-- Services Title -->
+            <div class="flex flex-col md:flex-row gap-3 items-center justify-between px-6 mb-8">
+                <div class="flex flex-col w-auto">
+                    <h1 class="text-5xl text-white font-bold mb-5">Our Services:</h1>
+                    <p class="text-gray-500 max-w-[700px] text-center md:text-left">At Redmption, we provide
+                        cutting-edge solutions to
+                        empower your digital presence and security.
+                        From crafting high-performance websites to safeguarding your online assets, our expert services
+                        ensure innovation, reliability, and protection. Explore our specialized offerings and take your
+                        business to the next level</p>
+                </div>
+                <div class="bg-white px-4 py-2 max-w-[120px] max-h-[50px] rounded-full cursor-pointer">Contact us</div>
+            </div>
+
+            <!-- Grid Container with Custom Column Layout -->
+            <div class="grid gap-6 px-4 md:px-10 md:grid-cols-2">
+                <!-- Left Div (Normal Size) -->
+                <div
+                    class="border border-white p-6 md:p-10 rounded-[36px] min-h-[300px] text-white flex flex-col justify-between">
+                    <h1>⚪</h1>
+                    <div>
+                        <h1 class="text-2xl">Web Development</h1>
+                        <p class="my-2 text-gray-400">
+                            Build fast, responsive, and modern websites tailored to your needs. From design to
+                            deployment, we
+                            create seamless digital experiences.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Div (Normal Size) -->
+                <div
+                    class="border border-white p-6 md:p-10 rounded-[36px] min-h-[300px] text-white flex flex-col justify-between">
+                    <h1>⚪</h1>
+                    <div>
+                        <h1 class="text-2xl">Cyber Security</h1>
+                        <p class="my-2 text-gray-400">
+                            Protect your digital assets with advanced cybersecurity solutions. We secure systems,
+                            prevent
+                            threats, and safeguard your data from cyber attacks.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Third Div (Full Width) -->
+                <div
+                    class="border border-white p-6 md:p-10 rounded-[36px] min-h-[300px] text-white flex flex-col justify-between md:col-span-2">
+                    <h1>⚪</h1>
+                    <div>
+                        <h1 class="text-2xl">Penetration Testing (Ethical Hacking)</h1>
+                        <p class="text-gray-400 line-clamp-3 md:line-clamp-none">
+                            Penetration testing, or ethical hacking, involves simulating cyberattacks to identify
+                            vulnerabilities in your systems before malicious hackers can exploit them. Our experts
+                            conduct thorough security assessments to strengthen your defenses. This proactive approach
+                            ensures your business is protected against evolving cyber threats.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-3 flex items-center justify-center mt-8">
+                <button class="bg-blue-500 text-white px-5 py-2 rounded-2xl">See more</button>
+            </div>
+    </div>
+    </section>
+
+    <!-- exclusive offer for new clients section -->
+    <section class="w-full h-auto bg-gray-900 flex justify-center items-center flex-col mb-10">
+        <div class="text-center text-white space-y-2 relative z-10">
+            <p class="text-sm md:text-xl font-bold transform translate-x-[-30%]">Exclusive <span
+                    class="text-blue-500">offers</span></p>
+            <p class="text-xs md:text-sm font-bold transform translate-x-[30%]">For,</p>
+            <p class="text-sm md:text-xl font-bold transform translate-x-[-20%] text-red-300">New</p>
+            <p class="text-sm md:text-xl font-bold transform translate-x-[50%] text-blue-300">Clients</p>
+        </div>
+        <p class="text-sm md:text-base text-white mt-4 max-w-[300px] text-center md:max-w-[600px]">
+            Welcome to Redemption! We’re excited to have you on board. As a special thank you, we’re
+            offering exclusive discounts and packages to help you get started with our services. Don't miss out –
+            unlock your success today with our limited-time offers! Contact us now to learn more.
+        </p>
+    </section>
+    <footer class="w-full h-[200px] flex items-end justify-center py-2">
+        <p class="text-gray-700">
+            &copy; <span id="year"></span> Sadraw-n. All Rights Reserved.
+        </p>
+    </footer>
+
+    <!-- Menu.js -->
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

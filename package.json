@@ -1,0 +1,19 @@
+{
+  "name": "mindfuck2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss -i ./css/input.css -o ./css/output.css",
+    "watch-css": "tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "emailjs-com": "^3.2.0"
+  }
+}
